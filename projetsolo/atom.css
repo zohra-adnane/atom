@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Début navbar + query */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav p {
+    display: inline;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:600px) {
+    nav p {
+        display: none;
+    }
+}
+
+header {
+    padding: 12%;
+    background-image: url(https://placehold.co/400x100);
+    background-size: cover;
+    /* largeur img a checker en mobile */
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5%;
+}
+
+.titre h1 {
+    margin-left: 10px;
+}
+
+.desc {
+    margin: 5% 3%;
+}
+
+#jeux {
+    display: inline-block;
+}
+
+.genre {
+    display: inline-block;
+    text-align: center;
+}
+footer {
+    border-top: 2px solid black;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
