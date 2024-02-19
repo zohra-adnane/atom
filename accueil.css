@@ -47,7 +47,7 @@ nav img {
     width: 50px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:460px) {
     nav p {
         display: none;
     }
@@ -117,7 +117,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:460px) {
     #carreBouton {
         display: block;
     }
@@ -192,7 +192,7 @@ footer img {
     width: 40px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:460px) {
     #reseaux {
         display: block;
     }

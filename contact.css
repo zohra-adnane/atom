@@ -52,7 +52,7 @@ nav img {
     width: 50px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:460px) {
     nav p {
         display: none;
     }
@@ -130,7 +130,7 @@ header h1 {
     width: 40%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:460px) {
     #flex {
         display: block;
     }
