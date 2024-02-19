@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf)
+}
+
+@font-face {
+    font-family: DM Sans;
+    src: url(DMSans-VariableFont_opsz\,wght.ttf)
+}
+
+
+body {
+    background-image: url(abstract_pattern_design_background_2007.jpg);
+    background-size: cover;
+    font-family: DM Sans;
+}
+
+h1, h2 {
+    font-family: Bebas;
+}
+/* Début navbar + query */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav p {
+    display: inline;
+    margin-left: 5px;
+}
+
+nav img {
+    width: 50px;
+}
+
+@media screen and (max-width:600px) {
+    nav p {
+        display: none;
+    }
+}
+
+/* Fin navbar + query */
+
+/* Header */
+header {
+    padding: 10%;
+    background-image: url(bg\ accueil.jpg);
+    background-size: cover;
+    border-bottom: 2px solid black ;
+    /* largeur img a checker en mobile */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 25%;
+    background-color: white;
+}
+
+/* Fin header */
+
+#desc {
+    margin: 5% 7%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+/* Début boutons ici */
+.bouton {
+    display: flex;
+    justify-content:space-around;
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.bouton img {
+    width: 150px;
+    height: 300px;
+}
+
+#carreBouton {
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 5%;
+}
+
+#carreBouton a{
+    text-decoration: none;
+}
+
+.text {
+    padding: 10px;
+}
+
+.img {
+    height: 300px;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px) {
+    #carreBouton {
+        display: block;
+    }
+
+    .bouton {
+        width: 80%;
+        margin: 10% 5%;
+    }
+}
+
+#atom {
+    box-shadow: 10px 5px 5px #61BEA9;
+    transition: all 0.2s ease-out;
+}
+
+#atom a {
+    color: #0D6E57;
+}
+
+#atom:hover {
+    box-shadow: 20px 10px 10px #61BEA9;
+}
+
+#brat {
+    box-shadow: 10px 5px 5px #471855;
+    transition: all 0.2s ease-out;
+}
+
+#brat a {
+    color: #471855;
+}
+
+#brat:hover {
+    box-shadow: 20px 10px 10px #471855;
+}
+
+/* fin boutons */
+
+footer {
+    border-top: 2px solid black;
+    background-color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: black;
+}
+
+
+footer img {
+    width: 40px;
+    padding: 10px;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseauSalle {
+    display: inline-block;
+    text-align: center;
+    margin: 2%;
+}
+
+.reseauSalle img {
+    width: 40px;
+}
+
+@media screen and (max-width:600px) {
+    #reseaux {
+        display: block;
+    }
+    .reseauSalle {
+        display: block;
+    }
+}
