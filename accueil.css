@@ -192,7 +192,9 @@ footer a {
 .reseauSalle {
     display: inline-block;
     text-align: center;
-    margin: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .reseauSalle img {
