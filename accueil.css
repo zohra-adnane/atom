@@ -167,7 +167,6 @@ header h1 {
 footer {
     border-top: 2px solid black;
     background-color: white;
-    bottom: 0px;
 }
 
 footer p {
@@ -175,14 +174,13 @@ footer p {
     padding: 10px;
 }
 
-footer a {
-    color: black;
-}
-
-
 footer img {
     width: 40px;
     padding: 10px;
+}
+
+footer a {
+    color: black;
 }
 
 #reseaux {

@@ -132,7 +132,11 @@ header h1 {
 
     .genre {
         display: block;
-        margin: 0% 27%;
+        margin: 5%;
+        padding: 10px;
+    }
+
+    #jeux p {
         padding: 10px;
     }
 }
