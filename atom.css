@@ -53,8 +53,12 @@ nav img {
     width: 50px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     nav p {
+        display: none;
+    }
+
+    header h1 {
         display: none;
     }
 }
@@ -121,7 +125,7 @@ header h1 {
     border: 2px #000000 solid;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     #jeux {
         display: block;
     }
