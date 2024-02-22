@@ -122,6 +122,11 @@ header h1 {
     transition: all 0.2s ease-out;
 }
 
+#jeux a {
+    text-decoration: none;
+    color: black;
+}
+
 .genre img {
     width: 200px;
     border: 2px #000000 solid;
@@ -148,6 +153,84 @@ header h1 {
     }
 }
 
+.overlay {
+    position: absolute; /* position absolue pour couvrir toute la fenêtre */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* fond noir et semi-transparent */
+    transition: opacity 200ms; /* effet de transition sur l'opacité, comme indiqué plus haut avec "transition" */
+    visibility: hidden; /* rend l'overlay invisible par défaut */
+    opacity: 0; /* opacité initiale à 0 */
+  }
+  
+  .overlay:target {
+    visibility: visible; /* rend l'overlay visible */
+    opacity: 1; /* opacité maximale */
+  }
+
+  .modal {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin: 75px auto;
+    background: #fff;
+    border: 2px solid #419F89;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    /* position: relative; position relative à la position de départ de la div contenant cette classe */
+    position: relative;
+    bottom: 0;
+  }
+  
+  .modal .close {
+    position: absolute; /* position absolue par rapport au modal */
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 24px;
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .modal .content {
+    max-height: 400px; /* hauteur maximale de 400 pixels */
+    overflow: auto; /* activation du défilement si le contenu dépasse la hauteur maximale (avec un lorem ipsum bien cahrgé par exemple) */
+  }
+
+  .bouton {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.bouton img {
+    width: 250px;
+    height: 400px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.img {
+    height: 300px;
+}
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
 footer {
     border-top: 2px solid black;
     background-color: white;
@@ -170,4 +253,10 @@ footer a {
 #reseaux {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+#modalRythme, #modalCombat, #modalTir, #modalCourse {
+    display: none;
+}
 }
