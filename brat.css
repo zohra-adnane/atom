@@ -138,6 +138,9 @@ header h1 {
         box-shadow: none;
         transition: none;
     }
+    .groupe:hover {
+        box-shadow: none;
+    }
     .genre:hover {
         box-shadow: none;
     }

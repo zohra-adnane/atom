@@ -256,7 +256,15 @@ footer a {
 }
 
 @media screen and (max-width:600px) {
-#modalRythme, #modalCombat, #modalTir, #modalCourse {
+ #pc {
     display: none;
+ }
+}
+
+@media screen and (min-width:601px) {
+    #mobileOnly {
+        display: none;
 }
 }
+
+
